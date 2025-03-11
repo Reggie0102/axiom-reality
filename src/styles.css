@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade.hide {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  
+  .fade-right {
+    opacity: 0;
+    transform: translateX(50px); /* Start from right */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-right.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+  }
+
+  .fade-left {
+    opacity: 0;
+    transform: translateX(-50px); /* Start from right */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-left.show {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+  }
+  

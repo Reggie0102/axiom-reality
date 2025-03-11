@@ -1,0 +1,92 @@
+ 
+.box{
+    flex: 1;
+  }
+   
+  .about-us-main {
+    justify-items: center;
+  }
+  .our-work-img {
+    height: 50vw;
+  }
+   
+  .vl {
+    border-right: 6px solid black;
+    height: 430px;
+  }
+   
+  .wwd-img {
+    height: 15rem;
+      width: 25rem;
+  }
+   
+  .wwd-text {
+    height: auto;
+      width: 25rem;
+  }
+   
+  .text-center {
+    text-align: center !important;
+  }
+   
+  .principles-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+   
+  .ps-icon {
+    height: 10rem;
+  }
+   
+  .ps-header {
+    align-content: center;
+    margin-left: 5rem;
+  }
+
+  .card-wrapper:hover  {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .card-wrapper {
+    padding: .5rem !important;
+    transition: transform 0.5s;
+  }
+   
+  @media only screen and (max-width: 600px){
+    .wwd-img {
+      height: 15rem;
+      width: 20rem;
+    }
+    .wwd-text {
+      height: auto;
+      width: 20rem;
+    }
+    .ps-icon {
+      height: 5rem;
+    }
+    .ps-header {
+      margin-left: 2rem;
+    }
+    div>.construction-block{
+      flex-direction: column !important;
+    }
+  
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

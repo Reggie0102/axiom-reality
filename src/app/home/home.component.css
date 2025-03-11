@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+.hero {
+    position: relative;
+    background: url('../../assets/images/firstBG.png') ;
+    height: 90vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  
+  .hero h1 {
+    font-weight: bold;
+  }
+  
+  .section {
+    padding: 50px 0px 0px 0px;;
+  }
+  .project-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+  }
+  
+  .project-slider img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+ 
+  .about-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+   
+  
+   :host::ng-deep .carousel-control-prev {
+    left: -3rem;
+    z-index: 4;
+  }
+  .carousel-control-prev-icon , .carousel-control-next-icon{
+    background-color: #242424;
+    border-radius: 10px;
+  }
+  :host::ng-deep.carousel-control-next {
+    left: -1.5rem;
+    z-index: 4;
+  }
+  .about-icons{
+    background-color: #2A2929;
+  }
+  .content-for-why-us{
+    position: relative;
+    height: 17rem;
+    padding: 3rem;
+  }
+  .cards{
+    position: absolute;
+    z-index: 2;
+    bottom: 1rem;
+  }
+  .bottom-section{
+    position: absolute;
+    background: orange;
+    height: 3rem;
+    width: 100%;
+    z-index: inherit;
+    bottom: 0;
+  } 
+  .cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+.innovation-header {
+  font-size: 3.5rem;
+  padding: 10px;
+}
+
+
+/* Innovation css */
+
+@keyframes lights {
+0% {
+  color: hsl(230, 40%, 80%);
+  text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.2),
+    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+    -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+    1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+}
+
+30% { 
+  color: hsl(230, 80%, 90%);
+  text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+    0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+}
+
+40% { 
+  color: hsl(230, 100%, 95%);
+  text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 90%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+}
+
+70% {
+  color: hsl(230, 80%, 90%);
+  text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+    -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+}
+
+100% {
+  color: hsl(230, 40%, 80%);
+  text-shadow:
+    0 0 1em hsla(320, 100%, 50%, 0.2),
+    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+    1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+    -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+}
+
+}
+/* 
+body {
+margin: 0;
+font: 100% / 1.5 Raleway, sans-serif;
+color: hsl(230, 100%, 95%);
+background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+height: 100vh;
+display: flex;
+} */
+
+.innovation-header {
+margin-top: -200px;
+font-size: 3.5rem;
+font-weight: 300;
+animation: lights 5s 750ms linear infinite;
+}
+
+@media only screen and (max-width: 600px){
+.cursor {
+  font-size: 11px;
+}
+}
+
+.home-text {
+  font-size: 2rem;
+}
